@@ -29,6 +29,14 @@ body {
   background-color: #F85559;
   border-radius: 50%;
 }
+.card-apple{
+  width: 142px;
+  height: 177px;
+  flex-shrink: 0;
+  text-align: center;
+  border: 1px solid blueviolet;
+}
+
 
 
 
