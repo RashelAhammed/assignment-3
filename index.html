@@ -17,36 +17,39 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <header>
-    <div class="navbar bg-[#F85559] text-white rounded-full my-5 w-3/4 mx-auto">
-
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
-          <li><a>About Us</a></li>
-          <li><a>Shop</a></li>
-          <li><a>All Fruits</a></li>
-        </ul>
-      </div>
-        <div class="nav-middle flex items-center justify-center ml-28">
-          <img src="./images/logo.png" alt="logo">
-          <p>Burst</p>
-        </div>
+  <header class="w-3/4 mx-auto">
+    <div class="navbar bg-red-400 rounded-full text-white my-5">
       <div class="navbar-start">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
-            
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
           </label>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a>Item 1</a></li>
-            <li><a>Item 3</a></li>
-          </ul>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li tabindex="0">
+                <details>
+                  <summary>About Us</summary>
+                  <ul class="p-2">
+                    <li><a>About Our</a></li>
+                    <li><a>About Burst</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li><a>Shope</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
         </div>
         
       </div>
       
-      <div class="navbar-end flex items-center justify-center gap-4 bg-blue-100 rounded-full text-slate-400 pt-3">
-        <a class="sarch">Sarch Here <span><i class="fa-solid fa-magnifying-glass"></i></span> </a>
+      <div>
+        <img src="./images/logo.png" alt="">
+        <p>Brust</p>
+      </div>
+      <div class="navbar-end">
+        <a class="btn bg-white rounded-full text-gray-600">Sarch here <span><i class="fa-solid fa-magnifying-glass pt-3"></i></span></a>
       </div>
     </div>
   </header>
@@ -137,7 +140,7 @@
   </section>
   <!-- Deal of the day section -->
   <section class="w-3/4 mx-auto">
-    <div class="del-top flex flex-col my-3 justify-between lg:mt-24">
+    <div class="del-top flex lg:flex-row md:flex-row flex-col my-3 justify-between lg:mt-24">
       <div>
         <h1 class="text-3xl font-bold">Deal of the day</h1>
         <p>Contrary to popular belief, is not simply random text. It has roots in a piece<br> of classical  Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -170,7 +173,7 @@
       </div>
     </div>
     <!-- del card start  -->
-    <div class="team-member flex flex-col items-center pb-24 text-gray-700 justify-center">
+    <div class="team-member flex lg:flex-row md:flex-row flex-col items-center pb-24 text-gray-700 justify-center">
       <div class="card w-46  ">
         <figure class="px-10 pt-10">
           <img src="./images/fruit6.png" alt="Awlad Hossain" class="rounded-xl" />
@@ -269,7 +272,7 @@
       <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
     </div>
     <!-- tem member start here  -->
-    <div class="team-member flex flex-col items-center pb-24 text-white justify-center">
+    <div class="team-member flex lg:flex-row md:flex-row flex-col items-center pb-24 text-white justify-center">
       <div class="card w-46  ">
         <figure class="px-10 pt-10">
           <img src="./images/member1.png" alt="Awlad Hossain" class="rounded-xl" />
@@ -339,7 +342,7 @@
        <p class=""> Contrary to popular belief, is not simply random text. <br> It has roots in a piece of classical Latin literature from 45 BC,<br>  making it over 2000 years old.</p>
      </div>
      <!-- choose container  -->
-     <div class="choose-container h-max flex gap-6 my-12 ">
+     <div class="choose-container h-max flex lg:flex-row md:flex-col flex-col gap-6 my-12 ">
       <div class="choose-container-left lg:w-1/3">
        <div class="flex text-left items-center gap-4 justify-center my-5 ">
           <div>
